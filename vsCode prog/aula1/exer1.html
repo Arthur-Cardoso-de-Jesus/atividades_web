@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <title>Exer1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="overlay">
+    <div id="modal">
+      <button id="closeModal">Close</button>
+      <div id="modalContainer">
+        <div id="imgContainer"><img src="" id="imgResultado" alt=""></div>
+        <div id="infoContainer"><h3 id="textoResultado"> </h3></div>
+      </div>
+      
+    </div>
+  </div>
+
+
+    <header class="header">
+        <div class="menu">
+            <a href="index.html"><h2>Menu</h2></a>
+            <a href="cur.html"><h2>Curriculum</h2></a>
+            <a href="port.html"><h2>Portfólio</h2></a>
+        </div>
+     <h1>Arthur Cardoso de Jesus</h1>
+    </header>
+    <div id="mainExer1">
+        <div id="container">
+
+            <form action="/action_page.php" id="form">
+                
+                    <legend><h3 class="rainbow">Sistema Fit</h3></legend>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome"  class="entrada"><br><br>
+
+                <label for="sexo">Sexo:</label><br>
+                
+                <input type="radio" id="masc" name="sexo" value="masculino" class="sexo" checked>
+                <label for="masc">Masc</label>
+                <input type="radio" id="fem" name="sexo" value="feminino" class="sexo" >
+                <label for="fem">Fem</label><br><br>
+                <label for="fname">Data de Nacimento:</label><br>
+                <input type="date" id="dataNasc"  class="entrada"><br><br>
+                <label for="lname">Altura:</label><br>
+                <input type="number" step='0.01'  placeholder='0.00 *Sempre colocar ponto' id="altura" class="entrada"><br><br>
+                <label for="fname">Peso:</label><br>
+                <input type="number" placeholder='0 *em kilos' id="peso" class="entrada"><br><br>
+              </form>
+
+              <div id="botao">
+              <button  class="botão" id="btnVerificar" onclick="calcularIMC()">Verificar</button>
+                <button  class="botão" id="btnLimpar">Limpar</button>
+                <button class="botão" id="btnCalcular">Voltar</button>
+            </div>
+        </div>   
+
+        
+
+    <script src="js/script.js"></script>
+</body>
+</html>
